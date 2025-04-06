@@ -1,3 +1,62 @@
+Objective of the project
+The purpose of this project is to mirror and continuously synchronize a Bitbucket repository with a GitHub repository using Bitbucket Pipelines. It provides a step-by-step guide for automating the synchronization process, ensuring that changes pushed to the Bitbucket repository are mirrored to GitHub. This solution is ideal for teams transitioning from Bitbucket to GitHub, maintaining a backup on GitHub, or collaborating across both platforms.
+
+📂 Table of Contents
+Objective
+
+Prerequisites
+
+Setup Guide
+
+Pipeline Configuration
+
+How It Works
+
+Screenshots
+
+Troubleshooting
+
+Prerequisites
+Before you begin, make sure you have:
+
+A Bitbucket repository (private or public)
+
+A GitHub account and repository (created manually or via import)
+
+Access to Bitbucket Pipelines
+
+Basic Git knowledge
+
+Admin access to both repos
+
+Setup Guide
+Create Repositories:
+
+Create or import your Bitbucket repository
+
+Create a GitHub repository (with the same name recommended)
+
+Generate Access Tokens:
+
+Bitbucket: Go to Repo Settings > Access Tokens, generate with READ permissions
+
+GitHub: Go to Settings > Developer Settings > Personal Access Tokens, select scopes: repo, workflow, write:packages
+
+Add SSH Keys:
+
+In Bitbucket: Add public key to Pipelines > SSH Keys
+
+In GitHub: Add same public key under Deploy Keys and allow write access
+
+Add Pipeline Variables:
+
+BITBUCKET_VARIABLE = Bitbucket Access Token
+
+GITHUB_VARIABLE = GitHub Access Token
+
+Enable Bitbucket Pipelines:
+
+Go to Pipelines > Settings, click Enable Pipelines
 # Mirror-and-synchronizing
 Mirror and synchronizing GitHub &amp; Bitbucket repository
 
