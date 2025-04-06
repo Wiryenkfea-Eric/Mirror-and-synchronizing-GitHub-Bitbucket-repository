@@ -1,7 +1,9 @@
 Objective of the project
+
 The purpose of this project is to mirror and continuously synchronize a Bitbucket repository with a GitHub repository using Bitbucket Pipelines. It provides a step-by-step guide for automating the synchronization process, ensuring that changes pushed to the Bitbucket repository are mirrored to GitHub. This solution is ideal for teams transitioning from Bitbucket to GitHub, maintaining a backup on GitHub, or collaborating across both platforms.
 
-📂 Table of Contents
+Table of Contents
+
 Objective
 
 Prerequisites
